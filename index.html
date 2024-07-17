@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FOR STUDENT BY ACADEMICS</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>FOR STUDENT BY ACADEMICS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Início</a></li>
+                <li><a href="#">Jogos</a></li>
+                <li><a href="#">Sobre</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="intro">
+            <h2>Bem-vindo à FOR STUDENT BY ACADEMICS</h2>
+            <p>Ensine programação de uma forma divertida e interativa com nossos jogos educativos.</p>
+        </section>
+        <section class="jogos-container">
+            <div class="jogo">
+                <h3>Jogo 1: Sequência de Cores</h3>
+                <img src="images/colors.png" alt="Sequência de Cores">
+                <p>Ajude a personagem a seguir a sequência correta de cores.</p>
+                <button onclick="abrirJogo('color-sequence-game.js')">Jogar</button>
+            </div>
+            <div class="jogo">
+                <h3>Jogo 2: Adivinhação de Número</h3>
+                <img src="images/numbers.png" alt="Adivinhação de Número">
+                <p>Tente adivinhar o número correto.</p>
+                <button onclick="abrirJogo('number-guessing-game.js')">Jogar</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 FOR STUDENT BY ACADEMICS. Todos os direitos reservados.</p>
+    </footer>
+    <div id="gameModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="fecharJogo()">&times;</span>
+            <h2 id="gameTitle"></h2>
+            <div id="gameContainer"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
